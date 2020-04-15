@@ -1,3 +1,9 @@
+/**
+ * Content component.
+ * Middle.
+ * Height is fixed..
+ */
+
 import React, { CSSProperties } from 'react'
 import { useThemeState } from '../themes/ThemeContext'
 

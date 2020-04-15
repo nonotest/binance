@@ -31,6 +31,8 @@ function useMedia(queries, values, defaultValue) {
 
   // State and setter for matched value
   const [value, setValue] = useState(getValue)
+
+  // dispatches layout change.
   setTimeout(() => {
     dispatch({
       type: themeActions.SET_LAYOUT,
