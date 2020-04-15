@@ -21,7 +21,7 @@ function Footer() {
       )}
     >
       <footer>
-        <button style={styles.button}>Click here !</button>
+        <button style={styles.button}>Click here!</button>
       </footer>
     </div>
   )
