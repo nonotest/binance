@@ -9,17 +9,16 @@ import { black } from '../themes/colors'
 function Footer() {
   const themeState = useThemeState()
   const { theme } = themeState
+  const containerStyle = Object.assign(
+    { backgroundColor: theme.backgrounds.footer },
+    styles.container
+  )
 
   // if we wanted a different theme for the
   // click here button we could add it here.
 
   return (
-    <div
-      style={Object.assign(
-        { backgroundColor: theme.backgrounds.footer },
-        styles.container
-      )}
-    >
+    <div style={containerStyle}>
       <footer>
         <button style={styles.button}>Click here!</button>
       </footer>
