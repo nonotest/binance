@@ -24,15 +24,27 @@ function LeftSideBar({ containerStyles = {} }: Props) {
 
   // horizontal or vertical layout depending
   // on screen size
-  const direction = layout === 'laptop' ? 'column' : 'row'
-  const outerContainerStyles = Object.assign(containerStyles, styles.container)
+  let direction = ''
+  let widgetContainerStyles = {}
+  if (layout === 'laptop') {
+    direction = 'column'
+    widgetContainerStyles = { width: 200 }
+  } else {
+    direction = 'row'
+    widgetContainerStyles = { flex: 1, display: 'flex' }
+  }
+  const outerContainerStyles = Object.assign(
+    {},
+    containerStyles,
+    styles.container
+  )
 
   return (
     <div style={outerContainerStyles}>
       <aside style={Object.assign({ flexDirection: direction }, styles.aside)}>
-        <BitcoinMovers />
+        <BitcoinMovers containerStyles={widgetContainerStyles} />
         <Spacer />
-        <EthMovers />
+        <EthMovers containerStyles={widgetContainerStyles} />
       </aside>
     </div>
   )

@@ -11,10 +11,11 @@ interface Props {
   containerStyles?: CSSProperties
 }
 
-function Content({ containerStyles }: Props) {
+function Content({ containerStyles = {} }: Props) {
   const themeState = useThemeState()
   const { theme } = themeState
   const outerContainerStyles = Object.assign(
+    {},
     containerStyles,
     { backgroundColor: theme.backgrounds.content },
     styles.container

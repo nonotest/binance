@@ -10,6 +10,7 @@ function Footer() {
   const themeState = useThemeState()
   const { theme } = themeState
   const containerStyle = Object.assign(
+    {},
     { backgroundColor: theme.backgrounds.footer },
     styles.container
   )

@@ -21,7 +21,14 @@ Ideally I would use a tool like styled components or emotion.
 You could then use the media-queries directly in the
 styled components.
 
-# Note
+# Layout
+
+We set a max fixed width for each widgets inside
+the left column on "laptop" mode.
+Ob "mobile" mode to make it look better we divide
+the column by 2 and allow each widget to take all the space.
+
+# PDF Note
 
 The PDF looks like there is some margin/padding left
 on the mobile view for the "main" box and "appbar" box

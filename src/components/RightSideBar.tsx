@@ -18,6 +18,7 @@ function RightSideBar({ containerStyles = {} }: Props) {
   const themeState = useThemeState()
   const { theme } = themeState
   const outerContainerStyles = Object.assign(
+    {},
     containerStyles,
     { backgroundColor: theme.backgrounds.rightSideBar },
     styles.container
