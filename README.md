@@ -28,6 +28,12 @@ the left column on "laptop" mode.
 Ob "mobile" mode to make it look better we divide
 the column by 2 and allow each widget to take all the space.
 
+--
+
+For the right column we instead fix the width for the
+"laptop" mode and let the column take the whole space
+without setting a width on "mobile" mode.
+
 # PDF Note
 
 The PDF looks like there is some margin/padding left
